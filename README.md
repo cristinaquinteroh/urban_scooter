@@ -1,5 +1,3 @@
-# urban_scooter
-Proyecto final del bootcamp de QA Engineer de TripleTen. Diseñé y ejecuté 166 casos de prueba sobre Urban Scooter, una aplicación de alquiler de scooters con entrega a domicilio, que cubren la versión web, la API del back-end y las funciones clave de la app móvil Android. Validé 15 endpoints y documenté 24 defectos en Jira, 10 de severidad alta.
 # Urban Scooter: pruebas web, móviles y de API del flujo de reservas
 
 ## Resumen

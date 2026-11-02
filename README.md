@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Proyecto final del bootcamp de QA Engineer de TripleTen. Diseñé y ejecuté 166 casos de prueba sobre Urban Scooter, una aplicación de alquiler de scooters con entrega a domicilio, que cubren la versión web, la API del back-end y las funciones clave de la app móvil Android. Validé [X] endpoints y documenté 24 defectos en Jira, [X] de severidad alta.
+Proyecto final del bootcamp de QA Engineer de TripleTen. Diseñé y ejecuté 166 casos de prueba sobre Urban Scooter, una aplicación de alquiler de scooters con entrega a domicilio, que cubren la versión web, la API del back-end y las funciones clave de la app móvil Android. Validé 15 endpoints y documenté 24 defectos en Jira, 10 de severidad alta.
 
 ## Objetivo
 
@@ -15,7 +15,7 @@ Es la función central del negocio. Si el pedido no se crea, se crea con datos i
 **Qué se probó**
 
 - **Web:** formulario "Hacer pedido" (nombre, apellido, dirección, estación de metro, teléfono, fecha de entrega, periodo de alquiler, color y comentario) y pantalla "Estado del pedido" (cadena de estados, cancelación del pedido y pedido atrasado).
-- **API:** crear repartidor (`POST /api/v1/courier`), eliminar repartidor (`DELETE /api/v1/courier/{id}`) y consultar un pedido por su número de seguimiento. [Agrega los demás endpoints, si aplica.]
+- **API:** crear repartidor (`POST /api/v1/courier`), eliminar repartidor (`DELETE /api/v1/courier/{id}`) y consultar un pedido por su número de seguimiento (GET /api/v1/orders/track)
 - **Base de datos:** verificación de los registros en PostgreSQL (tablas `Orders` y `Couriers`).
 - **App móvil (Android):** notificación 2 horas antes del final del pedido y ventana "Sin acceso a Internet". La app también se usó como repartidor para mover los pedidos por los estados.
 
@@ -30,7 +30,6 @@ Es la función central del negocio. Si el pedido no se crea, se crea con datos i
 - Página de inicio (landing).
 - Resto de funciones de la app móvil (solo se usó para avanzar los pedidos por los estados).
 - Dispositivos físicos (solo se usó el emulador).
-- [Agrega otros, si aplica.]
 
 ## Técnicas utilizadas
 
@@ -47,9 +46,9 @@ Es la función central del negocio. Si el pedido no se crea, se crea con datos i
 |---|---|
 | Casos de prueba diseñados | 166 |
 | Casos ejecutados | 166 |
-| Endpoints validados | [X] |
+| Endpoints validados | 15 |
 | Defectos encontrados y documentados | 24 |
-| Defectos críticos o altos | [X] |
+| Defectos críticos o altos | 10 |
 
 **Hallazgos principales**
 
@@ -63,8 +62,6 @@ Es la función central del negocio. Si el pedido no se crea, se crea con datos i
 
 ## Extracto de casos de prueba
 
-(Reemplaza los IDs por los de tus hojas de cálculo.)
-
 | ID | Descripción | Pasos | Resultado esperado | Resultado obtenido | Estado |
 |---|---|---|---|---|---|
 | TC-01 | Nombre con un espacio | 1. Abrir el formulario "Para quién es el scooter".<br>2. Escribir "Ed Castro" en Nombre. | Se acepta. | Se acepta. | Aprobado |
@@ -76,7 +73,7 @@ Es la función central del negocio. Si el pedido no se crea, se crea con datos i
 
 ## Defecto destacado
 
-**Título:** En Chrome no se puede crear un pedido (el botón "Sí" de la ventana "¿Deseas hacer un pedido?" no hace nada) — [UR-X]
+**Título:** En Chrome no se puede crear un pedido (el botón "Sí" de la ventana "¿Deseas hacer un pedido?" no hace nada) — [UR-11]
 
 **Pasos para reproducirlo:**
 
@@ -115,8 +112,6 @@ Es la función central del negocio. Si el pedido no se crea, se crea con datos i
 ├── informes-de-defectos/     # UR-1 a UR-24
 └── evidencias/
 ```
-
-(Ajusta los nombres a los de tus archivos.)
 
 ## Herramientas
 

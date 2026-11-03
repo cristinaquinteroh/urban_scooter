@@ -88,7 +88,7 @@ Es la función central del negocio. Si el pedido no se crea, se crea con datos i
 
 **Severidad y prioridad:** Alta / Alta. Bloquea el flujo principal en uno de los navegadores que exigen los requisitos.
 
-**Evidencia:** captura del informe en Jira y de la consola de Chrome (`evidencias/`).
+**Evidencia:** captura del informe en Jira y de la consola de Chrome (Bugs en Jira).
 
 ## Evidencias
 
